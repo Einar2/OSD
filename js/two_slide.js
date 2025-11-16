@@ -24,7 +24,7 @@ animation.addEventListener("animationend", (e) => {
 // 
 
 let btn_music = document.querySelector('.button')
-let audio = new Audio('../music/osd_mixdown.mp3')
+let audio = new Audio('osd_mixdown.mp3')
 
 btn_music.addEventListener('click', () => {
     audio.play();
