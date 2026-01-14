@@ -21,11 +21,29 @@ animation.addEventListener("animationend", (e) => {
 
 
 
-// 
+// to play sound
 
-let btn_music = document.querySelector('.button')
-let audio = new Audio('osd_mixdown.mp3')
+let btn_music = document.querySelector('.button');
+
+let audio;
+
+const testAudio = new Audio();
+const canPlayMP3 = testAudio.canPlayType('audio/mpeg');
+const canPlayOGG = testAudio.canPlayType('audio/ogg');
+
+// Выбираем формат в зависимости от поддержки браузером
+if (canPlayMP3 !== '' && canPlayMP3 !== 'no') {
+    audio = new Audio("../music/osd_mixdown.mp3");
+} else if (canPlayOGG !== '' && canPlayOGG !== 'no') {
+    audio = new Audio("../music/osd_mixdown.ogg");
+} else {
+    console.error("Браузер не поддерживает ни MP3, ни OGG форматы");
+}
 
 btn_music.addEventListener('click', () => {
     audio.play();
+    setTimeout(() => {
+        step++;
+        next_slide();
+    }, 23000);
 })

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StrangerNet</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
     </div>
     <!-- #2 -->
     <div class="block_intro slide not_active_slide">
-        <div class="container">
+        <div class="container_two">
             <h1 id="animation" class="intro-sf-title ">
                 <div class="intro-sf-title-bound"></div>
                 <div class="intro-sf-title-up">
@@ -39,48 +40,865 @@
                         ing
                         <span class="down-to-up-2">s</span>
                     </div>
-                    <div class="intro-sf-title-bound down" />
+                    <div class="intro-sf-title-bound down"></div>
                 </div>
             </h1>
         </div>
     </div>
     <!-- #3 -->
-    <div class="slide not_active_slide">
+    <div class="slide not_active_slide three_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="content_three">
+                <h2>ДОБРО ПОЖАЛОВАТЬ В ХОУКИНС. 1983г.</h2>
+
+                <p>Здесь наизнанку выворачивается не только реальность. Здесь дружба сильнее страха, велосипеды быстрее
+                    машин, а одна игра в D&D может изменить всё. Включите гирлянды и приготовьтесь. Ваше лето только
+                    начинается.</p>
+
+                <a class="btn_slide" href="#">Начать</a>
+            </div>
+
+        </div>
+
     </div>
     <!-- #4 -->
-    <div class="slide not_active_slide">
+    <div class="slide not_active_slide four_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Друзья</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+                <div class="four_item">
+                    <img src="img/f1.png" alt="">
+                    <h3>Дастин Хендерсон - </h3>
+                    <p>один из главных героев сериала Netflix «Очень странные дела». Он принадлежит к группе друзей,
+                        которых называют «Клуб» или «Партия», куда также входят Майк, Лукас, Уилл и Одиннадцать.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f2.png" alt="">
+                    <h3>Лукас Синклер - </h3>
+                    <p>вырос в Хоукинсе и дружит с Майком Уилером и Уиллом Байерсом с ранних лет. В четвертом классе к
+                        их компании присоединился Дастин Хендерсон. Вместе они часто собираются в доме Майка, чтобы
+                        играть в «Подземелья и драконов»</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f3.png" alt="">
+                    <h3>Майк Уилер - </h3>
+                    <p>один из главных героев сериала «Очень странные дела», лучший друг Дастина, Лукаса и Уилла. Он
+                        является лидером группы подростков и участвует в приключениях, связанных с паранормальными
+                        событиями в Хоукинсе.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f4.png" alt="">
+                    <h3>Уилл Байерс - </h3>
+                    <p>один из главных героев сериала «Очень странные дела», младший сын Джойс и Лонни Байерсов, младший
+                        брат Джонатана. Он застенчивый, добрый и робкий мальчик, которого в первом сезоне похищает
+                        Векна и утаскивает в «Обратную сторону». </p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
     </div>
     <!-- #5 -->
     <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Главные герои Аляски</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+                <div class="four_item">
+                    <img src="img/f5.png" alt="">
+                    <h3>Джойс Байерс - </h3>
+                    <p>мама Уилла и Джонатана, одна из главных героинь сериала. На первый взгляд — хрупкая, нервная
+                        женщина, живущая в бедности и работающая продавцом, она оказывается невероятно сильной,
+                        решительной и находчивой. </p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f6.png" alt="">
+                    <h3>Джим Хоппер -</h3>
+                    <p>начальник полиции Хоукинса, в прошлом — нью-йоркский детектив, переживающий личную трагедию
+                        (смерть дочери от рака). Циничный, грубоватый и внешне равнодушный, он на самом деле обладает
+                        обострённым чувством справедливости и глубоким внутренним стержнем.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/murrey.png" alt="">
+                    <h3>Мюррей Бауман - </h3>
+                    <p>Бывший журналист-расследователь газеты Chicago Sun-Times, Мюррей был нанят Холландсами в 1984
+                        году для расследования исчезновения их дочери Барбары в предыдущем году. </p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
     </div>
     <!-- #6 -->
     <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Лаборатория Хоукинса</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+                <div class="four_item">
+                    <img src="img/f7.png" alt="">
+                    <h3>11 - </h3>
+                    <p>девочка со сверхспособностями (телекинез, дистанционное наблюдение), сбежавшая из секретной
+                        лаборатории Хоукинса, где над ней ставили эксперименты. Наивная, молчаливая и психологически
+                        травмированная, она находит в маленьком городке семью, друзей и первую любовь, становясь главным
+                        защитником Хоукинса от угроз из Изнанки.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f8.png" alt="">
+                    <h3>Доктор Мартин Бреннер - </h3>
+                    <p>главный антагонист первых сезонов сериала «Очень странные дела». Он хладнокровный и
+                        манипулятивный учёный, руководитель секретной правительственной лаборатории в Хоукинсе. </p>
+                </div>
+                <div class="four_item">
+                    <img src="img/F9.png" alt="">
+                    <h3>8 - </h3>
+                    <p>одна из подопытных детей из проекта доктора Бреннера, сбежавшая из лаборатории. Она обладает
+                        мощными псионическими способностями, но в отличие от Одиннадцать, её сила заключается не в
+                        телекинезе, а в создании иллюзий.  </p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
     </div>
     <!-- #7 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Старшие братья и сестры</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+                <div class="four_item">
+                    <img src="img/f10.png" alt="">
+                    <h3>Билли Харгроув —</h3>
+                    <p>сводный брат Макс, антагонист второго сезона, который постепенно раскрывается как трагическая
+                        фигура. Внешне — харизматичный, агрессивный и жестокий хулиган, он является продуктом домашнего
+                        насилия и токсичного воспитания. </p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f11.png" alt="">
+                    <h3>Нэнси Уилер — </h3>
+                    <p>старшая дочь в семье Уилер, которая проходит путь от типичной старательной ученицы и популярной
+                        девушки до решительного, бесстрашного журналиста-расследователя. Её характер — это смесь ума,
+                        амбиций и невероятной стойкости, которые она направляет на борьбу со сверхъестественными
+                        угрозами Хоукинса.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f12.png" alt="">
+                    <h3>Джонатан Байерс -</h3>
+                    <p>старший брат Уилла, тихий и замкнутый подросток-одиночка с художественной душой. Несмотря на
+                        социальную изоляцию и трудную жизнь в бедной семье, он проявляет себя как невероятно заботливый,
+                        преданный и смелый человек. Его главные оружия — фотокамера и безграничная любовь к семье. </p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
+    </div>
     <!-- #8 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Младшие сестры</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+
+                <div class="four_item">
+                    <img src="img/f13.png" alt="">
+                    <h3>Макс Мэйфилд - </h3>
+                    <p>одна из главных героинь сериала «Очень странные дела», появившаяся во втором сезоне. Новенькая в
+                        Хоукинсе, она переехала с матерью и жестоким сводным братом Билли. </p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f14.png" alt="">
+                    <h3>Эрика Синклер -</h3>
+                    <p>младшая сестра Лукаса Синклера. Она появляется с третьего сезона, где быстро стала фанатским
+                        любимцем. Эрика невероятно умна, язвительна и обладает завышенной самооценкой, считая себя
+                        слишком крутой для приключенческих игр старшего брата и его друзей.</p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
+    </div>
     <!-- #9 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Агенты мороженого</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+
+                <div class="four_item">
+                    <img src="img/f15.png" alt="">
+                    <h3>Стив Харрингтон - </h3>
+                    <p>один из самых ярких и любимых персонажей сериала «Очень странные дела». Его путь — это путь
+                        невероятного развития от типичного популярного задиры в первом сезоне до настоящего героя и
+                        незаменимого члена команды.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f16.png" alt="">
+                    <h3>Робин Бакли - </h3>
+                    <p>персонаж, представленный в третьем сезоне. Она работает вместе со Стивом Харрингтоном в
+                        кафе-мороженом «Scoops Ahoy» в торговом центре «Старкурт». Сначала они кажутся парой вечно
+                        подкалывающих друг друга коллег, но вскоре становятся лучшими друзьями. </p>
+                </div>
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
+    </div>
     <!-- #10 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="four_h">
+                <h2>Необычные защитники</h2>
+                <div class="four_line"></div>
+                <h4>Хоукинс, штат Индиана</h4>
+            </div>
+
+            <div class="four_main">
+
+                <div class="four_item">
+                    <img src="img/f17.png" alt="">
+                    <h3>Эдди Мэнсон - </h3>
+                    <p>один из самых ярких и трагических персонажей четвертого сезона. Завсегдатай школьных коридоров и
+                        лидер местного клуба «Подземелья и драконы», он казался типичным трудным подростком с любовью к
+                        хэви-металу и бунтарским имиджем.</p>
+                </div>
+                <div class="four_item">
+                    <img src="img/f18.png" alt="">
+                    <h3>Боб Ньюби - </h3>
+                    <p> один из самых добрых и светлых персонажей второго сезона сериала. Он появляется как новый парень
+                        Джойс Байерс, представляя собой полную противоположность мрачному Хопперу. </p>
+                </div>
+
+            </div>
+
+            <div class="all_btn_block">
+                <a class="btn_slide btn_all_slide" href="#">Дальше</a>
+            </div>
+
+
+        </div>
+    </div>
     <!-- #11 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_iznanka">
+                <div class="block_iznanka"></div>
+                <div class="content_iznanka">
+                    <div class="left_iznanka">
+                        <h3>Обратная сторона (Изнанка)</h3>
+                        <div class="four_line"></div>
+                        <h6>Хоукинс, штат Индиана</h6>
+                        <p> — это практически идеальное, но искаженное отражение реального мира. Все здания, деревья
+                            и
+                            объекты существуют в обоих измерениях одновременно. Если что-то разрушить в Изнанке, оно
+                            не
+                            исчезнет в реальном мире, но может быть повреждено лозами или слизью.</p>
+                        <a class="btn_slide" href="#">Дальше</a>
+                    </div>
+                    <img src="img/w1.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     <!-- #12 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_iznanka">
+                <div style="background-color: #06174D;" class="block_iznanka"></div>
+                <div class="content_iznanka">
+                    <div class="left_iznanka">
+                        <h3>Обычная реальность</h3>
+                        <div class="four_line"></div>
+                        <h6>Хоукинс, штат Индиана</h6>
+                        <p>Реальный мир полон жизни, а Изнанка — это мир гниения, смерти и стагнации.</p>
+                        <a class="btn_slide" href="#">Дальше</a>
+                    </div>
+                    <img src="img/w2.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     <!-- #13 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_monster">
+
+                <div class="monster_img">
+                    <div class="blur_img"></div>
+                    <img src="img/m1.png" alt="">
+                </div>
+
+                <div class="monster_content">
+                    <h3>Демогоргоны - </h3>
+                    <p>хищные существа, населяющие Измерение Икс и Перевернутый мир. Предполагается, что все
+                        демогоргоны, встречавшиеся до сих пор, подчинялись Истребителю разума и, соответственно, Векне,
+                        и составляли часть «улья» Верхнего мира. Под влиянием улья демогоргоны становятся кровожадными,
+                        жестокими и обладают ограниченным интеллектом</p>
+                    <a class="btn_slide" href="#">Дальше</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- #14 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_monster">
+
+                <div class="monster_img">
+                    <div style="background-color: #223268" class="blur_img"></div>
+                    <img src="img/m2.png" alt="">
+                    <img class="edge" style="cursor: pointer;" src="img/m3.png" alt="">
+                </div>
+
+                <div class="monster_content">
+                    <h3>Векна - </h3>
+                    <p>главный антагонист четвёртого сезона, чья история раскрывает истоки зла в Хоукинсе. Настоящее имя
+                        — Генри Крил, он был первым подопытным с пси-способностями в лаборатории доктора Бреннера,
+                        известным как «Ноль-Один» (001).
+                        Обладая с детства мрачным и жестоким мировоззрением, он видел человечество как болезнь, а себя —
+                        как высшее существо, призванное очистить мир. </p>
+                    <a class="btn_slide" href="#">Дальше</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- #15 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_monster">
+
+                <div class="monster_img">
+                    <div style="background-color: #FF0000;" class="blur_img"></div>
+                    <img src="img/m4.png" alt="">
+                </div>
+
+                <div class="monster_content">
+                    <h3>Истязатель Разума - </h3>
+                    <p>зло из мира Изнанки, главный архитектор угрозы в сериале. Это не просто монстр, а
+                        инопространственный хищник, обладающий коллективным разумом и стремящийся поглотить всё
+                        мироздание.</p>
+                    <a class="btn_slide" href="#">Дальше</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- #16 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide">
+        <div class="block_menu">
+            <a class="n_btn n_main" href="#">Главная</a>
+            <a class="n_btn n_gg" href="#">Герои</a>
+            <a class="n_btn n_world" href="#">Миры</a>
+        </div>
+        <div class="container">
+            <nav>
+                <h2>StrangerNet </h2>
+
+                <div class="nav_btns">
+                    <a class="n_btn n_main" href="#">Главная</a>
+                    <a class="n_btn n_gg" href="#">Герои</a>
+                    <a class="n_btn n_world" href="#">Миры</a>
+                </div>
+
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+
+            </nav>
+
+            <div class="main_monster">
+
+                <div class="monster_img">
+                    <div style="background-color: #041f79;" class="blur_img"></div>
+                    <img src="img/m5.png" alt="">
+                </div>
+
+                <div class="monster_content">
+                    <h3>Паук-монстр - </h3>
+                    <p>один из самых узнаваемых монстров Изнанки, служащий свирепым хищником-солдатом для высших сил
+                        вроде Истязателя Разума. Он похож на высокого гуманоида с бледной кожей, но его лицо
+                        раскрывается, как цветок, обнажая розетку острых зубов, напоминающую морскую лилию. Невероятно
+                        сильный, быстрый и агрессивный, он охотится по запаху крови и становится главной физической
+                        угрозой в первом сезоне. Своё название получил от одноимённого существа из игры «Подземелья и
+                        драконы», которое дети используют как метафору для незнакомого им зла.</p>
+                    <a class="btn_slide" href="#">Дальше</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- #17 -->
-    <div class="slide not_active_slide"></div>
+    <div class="slide not_active_slide last_slide">
+        <div class="end_back_one"></div>
+        <div class="end_back_two"></div>
+        <div class="end_back_three"></div>
+        <div class="end_back_four"></div>
+
+        <h2 class="end_text">«Этот портал в «Очень странных делах» закрывается. В тенях загадок и параллельных миров
+            скрывается больше,
+            чем кажется на первый взгляд.</h2>
+
+        <p class="end_dev">Сайт разработан: <a href="https://t.me/@PrOStO_ios">Daria</a></p>
+        <p class="end_twich">Twich: <a href="https://www.twitch.tv/prosto886">prosto886</a></p>
+
+    </div>
 
     <script src="js/slide.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/edge.js"></script>
     <script src="js/two_slide.js"></script>
+    <script src="js/end.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,121 @@
+@media (max-width:1530px) {
+    .four_item p {
+        font-size: 14px;
+    }
+
+    .four_item img {
+        width: 200px;
+    }
+
+    .four_item {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:1174px) {
+    .left_iznanka {
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1003px) {
+    .left_iznanka {
+        order: 1;
+        margin-top: 30px;
+    }
+
+    .main_monster{
+        height: 80vh;
+    }
+
+    .monster_content{
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:970px) {
+    .four_item {
+        width: 35%;
+        margin-bottom: 10px;
+    }
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
+}
+
+
+
+
+@media (max-width:834px) {
+    .nav_btns {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .block_menu {
+        display: flex;
+    }
+
+}
+
+
+@media (max-width:680px) {
+    .three_slide {
+        background: #000;
+    }
+
+}
+
+
+
+@media (max-width: 540px) {
+    .intro-sf-title {
+        font-size: 50px;
+    }
+
+    .intro-sf-title .first-letter {
+        font-size: 75px;
+    }
+
+    .intro-sf-title .last-letter {
+        font-size: 75px;
+    }
+
+    .intro-sf-title-bound {
+        height: 2px;
+    }
+
+    .four_item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .four_item p {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left_iznanka {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_iznanka h3{
+        font-size: 20px;
+    }
+
+    .left_iznanka p{
+        max-width: 280px;
+    }
+
+
+}
