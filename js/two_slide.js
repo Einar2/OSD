@@ -25,7 +25,7 @@ animation.addEventListener("animationend", (e) => {
 
 let btn_music = document.querySelector('.button');
 
-let audio = New Auido(./music/osd_mixdown.mp3);
+let audio = New Auido(./music/osd_mixdown.wav);
 
 
 
