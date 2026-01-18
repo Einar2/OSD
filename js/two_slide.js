@@ -33,7 +33,7 @@ const canPlayOGG = testAudio.canPlayType('audio/ogg');
 
 // Выбираем формат в зависимости от поддержки браузером
 if (canPlayMP3 !== '' && canPlayMP3 !== 'no') {
-    audio = new Audio("./../music/osd_mixdown.mp3");
+    audio = new Audio("https://github.com/Einar2/OSD/tree/main/music/osd_mixdown.mp3");
 } else if (canPlayOGG !== '' && canPlayOGG !== 'no') {
     audio = new Audio("./../music/osd_mixdown.ogg");
 } else {
