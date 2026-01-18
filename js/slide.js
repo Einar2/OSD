@@ -30,7 +30,7 @@ n_main.forEach(item => {
 
 n_gg.forEach(item => {
     item.addEventListener("click", () => {
-        step = 0;
+        step = 3;
         next_slide();
     })
 })
