@@ -35,7 +35,7 @@ const canPlayOGG = testAudio.canPlayType('audio/ogg');
 if (canPlayMP3 !== '' && canPlayMP3 !== 'no') {
     audio = new Audio("https://github.com/Einar2/OSD/tree/main/music/osd_mixdown.mp3");
 } else if (canPlayOGG !== '' && canPlayOGG !== 'no') {
-    audio = new Audio("./../music/osd_mixdown.ogg");
+    audio = new Audio("https://github.com/Einar2/OSD/tree/main/music/osd_mixdown.ogg");
 } else {
     console.error("Браузер не поддерживает ни MP3, ни OGG форматы");
 }
