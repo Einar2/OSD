@@ -1,41 +1,48 @@
-const animation = document.getElementById("animation");
+let audioContext;
+let audioBuffer;
+let isAudioLoaded = false;
 
-animation.addEventListener("animationend", (e) => {
-    switch (e.animationName) {
-        case "title-scale-out":
-            [...document.getElementsByClassName("intro-sf-title-bound")].forEach(
-                (element, index, array) => {
-                    element.classList.add("visible");
-                }
-            );
-            break;
-        case "bound-fade-in":
-            setTimeout(() => {
-                animation.classList.add("outro");
-            }, 2000);
-            break;
-        default:
-            break;
+// Инициализация аудио
+async function initAudio() {
+    try {
+        audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        // Выбираем формат
+        const audioFormat = canPlayMP3 ? 'mp3' : 'ogg';
+        const response = await fetch(`../music/osd_mixdown.${audioFormat}`);
+        const arrayBuffer = await response.arrayBuffer();
+        audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+        isAudioLoaded = true;
+        console.log('Аудио загружено и готово к воспроизведению');
+    } catch (error) {
+        console.error('Ошибка загрузки аудио:', error);
     }
-});
+}
 
-
-
-// to play sound
-
-let btn_music = document.querySelector('.button');
-
-let audio = new Audio("./music/osd_mixdown.wav");
-
-
-
-// Выбираем формат в зависимости от поддержки браузером
-
-
-btn_music.addEventListener('click', () => {
-    audio.play();
+// Воспроизведение через Web Audio API
+function playAudioWithWebAudio() {
+    if (!isAudioLoaded) {
+        console.log('Аудио еще не загружено');
+        return;
+    }
+    
+    const source = audioContext.createBufferSource();
+    source.buffer = audioBuffer;
+    source.connect(audioContext.destination);
+    source.start(0); // Нулевая задержка
+    
     setTimeout(() => {
         step++;
         next_slide();
     }, 23000);
-})
+}
+
+// Инициализируем при загрузке страницы
+window.addEventListener('load', initAudio);
+
+btn_music.addEventListener('click', () => {
+    if (audioContext && audioContext.state === 'suspended') {
+        audioContext.resume(); // Разблокируем аудиоконтекст
+    }
+    playAudioWithWebAudio();
+});
